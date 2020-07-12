@@ -1,0 +1,47 @@
+Git Basics:
+		pwd
+		cd
+		cd ..
+		mkdir
+		touch filename
+		rm filename
+		rm -rf foldername
+		git init
+		git status
+		git init --help
+		git add filename
+		git rm --cached filename #unstage changes
+		git commit -m "message"
+		git config --global user.name name
+		git config --globale user.email email
+		git add .
+		git log
+		git log --oneline
+		vi ~/.gitconfig
+		git config --global --unset core.editor
+		git config --global core.editor "vi"
+		
+Undoing in Git:
+		git show HEAD              #shows the last commit
+		git show commitID          #shows that specifit commit
+		git show HEAD~1            #shows one before HEAD
+		git checkout filename1 filename2  #undo the changes in this files
+		git checkout commitnumber  #moves the HEAD pointer to that specific
+												commit and show the files in that stage
+												you can create changes and do commits but it will be temp
+		git checkout master 		#moves to the master
+		
+		git revert commitID     	#
+		git reset --mixed commID    # unstage the changes of that commit
+		git checkout .              # removes all changes of this commID
+		
+		git reset --soft 58b042c    # remove to changes to stage area (the changes are green)
+		git reset .					# unstage changes (make color red)
+		git checkout .              # remove changes
+		
+		git reset --hard commID
+		git reset --hard commID    # removes all changes after the specified ID
+		
+		
+		
+		
