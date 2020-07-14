@@ -43,5 +43,5 @@ Undoing in Git:
 		git reset --hard commID    # removes all changes after the specified ID
 		
 		
-		
+		git	
 		
